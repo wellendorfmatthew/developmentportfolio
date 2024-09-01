@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Header from "@/components/header";
+import Home from "@/components/home";
 
-export default function Home() {
+export default function Portfolio() {
   return (
-    <Header></Header>
+    <div>
+      <Header></Header>
+      <Home></Home>
+    </div>
   );
 }
