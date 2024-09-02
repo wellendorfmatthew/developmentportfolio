@@ -6,8 +6,9 @@ export default function Home() {
             <h1 className="font-bold text-4xl">Home</h1>
             <p 
                 className="max-w-[500px] min-w-52"
-            >Entry-level Software Engineer experienced in using HTML and CSS to build responsive web applications and eager to use
-            React, Javascript, Node.js and other technologies to solve complex problems and make meaningful contributions.
+            >
+            I am a Front-End / Full-Stack Developer currently interning for Geaux Network and looking for a full time 
+            developer position.
             </p>
         </div>
     )
