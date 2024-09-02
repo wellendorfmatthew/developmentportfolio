@@ -14,7 +14,7 @@ export default function Header() {
     }
 
     return (
-        <div className="bg-gray-500 flex w-screen h-36 items-center justify-evenly text-white text-lg">
+        <div className="bg-thistle flex w-screen h-36 items-center justify-evenly text-black text-lg">
             <h1 className="font-bold">Matthew Wellendorf</h1>
             <div className="flex items-center gap-12">
                 <a 
