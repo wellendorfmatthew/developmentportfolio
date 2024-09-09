@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Header from "@/components/header";
 import Github from "../public/github.png";
@@ -14,6 +16,9 @@ import CSS_ICON from "../public/css-3.png";
 import FIREBASE_ICON from "../public/icons8-firebase-64.png";
 import SQL from "../public/sql-server.png";
 import TYPESCRIPT_ICON from "../public/typescript.png";
+import NODE_ICON from "../public/node-js.png";
+import { CIcon } from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
 
 export default function Portfolio() {
   return (
@@ -62,37 +67,49 @@ export default function Portfolio() {
             <h1 className="font-bold text-4xl">Skills</h1>
             <Image src={Skills} alt="Skills"></Image>
             <div className="grid grid-cols-4 gap-8">
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={Javascript} alt="Javascript"></Image>
                     <p className="font-bold">Javascript</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={React} alt="React"></Image>
                     <p className="font-bold">React</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={HTML_ICON} alt="HTML"></Image>
                     <p className="font-bold">HTML</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={CSS_ICON} alt="CSS"></Image>
                     <p className="font-bold">CSS</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={FIREBASE_ICON} alt="Firebase"></Image>
                     <p className="font-bold">Firebase</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={Github} alt="Github"></Image>
                     <p className="font-bold">Github</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
                     <Image src={SQL} alt="Sql"></Image>
                     <p className="font-bold">SQL</p>
                 </div>
-                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
-                    <i className="cib-next-js"></i>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <CIcon icon={icon.cibNextJs} className="w-[64px] h-[64px]" />
+                    <p className="font-bold">Next.js</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <Image src={TYPESCRIPT_ICON} alt="Typescript"></Image>
                     <p className="font-bold">Typescript</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <Image src={NODE_ICON} alt="Node"></Image>
+                    <p className="font-bold">Node.js</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <CIcon icon={icon.cibMongodb} className="w-[64px] h-[64px]" />
+                    <p className="font-bold">MongoDB</p>
                 </div>
             </div>
         </div>
