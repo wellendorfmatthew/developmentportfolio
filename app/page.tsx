@@ -7,6 +7,13 @@ import Info from "../public/information-button.png";
 import Skills from "../public/pencil.png";
 import Projects from "../public/project-management.png";
 import Contact from "../public/email.png";
+import Javascript from "../public/js.png";
+import React from "../public/atom.png";
+import HTML_ICON from "../public/html-5.png";
+import CSS_ICON from "../public/css-3.png";
+import FIREBASE_ICON from "../public/icons8-firebase-64.png";
+import SQL from "../public/sql-server.png";
+import TYPESCRIPT_ICON from "../public/typescript.png";
 
 export default function Portfolio() {
   return (
@@ -54,12 +61,40 @@ export default function Portfolio() {
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="skills">
             <h1 className="font-bold text-4xl">Skills</h1>
             <Image src={Skills} alt="Skills"></Image>
-            <p 
-                className="max-w-[500px] min-w-52"
-            >
-            Entry-level Software Engineer experienced in using HTML and CSS to build responsive web applications and eager to use
-            React, Javascript, Node.js and other technologies to solve complex problems and make meaningful contributions.
-            </p>
+            <div className="grid grid-cols-4 gap-8">
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={Javascript} alt="Javascript"></Image>
+                    <p className="font-bold">Javascript</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={React} alt="React"></Image>
+                    <p className="font-bold">React</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={HTML_ICON} alt="HTML"></Image>
+                    <p className="font-bold">HTML</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={CSS_ICON} alt="CSS"></Image>
+                    <p className="font-bold">CSS</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={FIREBASE_ICON} alt="Firebase"></Image>
+                    <p className="font-bold">Firebase</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={Github} alt="Github"></Image>
+                    <p className="font-bold">Github</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <Image src={SQL} alt="Sql"></Image>
+                    <p className="font-bold">SQL</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle">
+                    <i className="cib-next-js"></i>
+                    <p className="font-bold">Typescript</p>
+                </div>
+            </div>
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="projects">
             <h1 className="font-bold text-4xl">Projects</h1>
