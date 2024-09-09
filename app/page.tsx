@@ -3,6 +3,10 @@ import Header from "@/components/header";
 import Github from "../public/github.png";
 import LinkedIn from "../public/linkedin.png";
 import Programming from "../public/programming.png";
+import Info from "../public/information-button.png";
+import Skills from "../public/pencil.png";
+import Projects from "../public/project-management.png";
+import Contact from "../public/email.png";
 
 export default function Portfolio() {
   return (
@@ -11,6 +15,9 @@ export default function Portfolio() {
       <div className="pt-44 flex flex-col gap-8">
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="home">
           <h1 className="font-bold text-4xl">Home</h1>
+          <div className="flex gap-28">
+            
+          </div>
           <Image src={Programming} alt="Programming"></Image>
           <p 
               className="max-w-[500px] min-w-52"
@@ -29,13 +36,14 @@ export default function Portfolio() {
           <a 
               href="/softwareresume.pdf" 
               target="_blank" 
-              className="bg-thistle text-lg px-8 py-4 rounded-full font-bold hover:drop-shadow-xl duration-150"
+              className="bg-thistle text-lg px-8 py-4 rounded-full hover:font-bold hover:text-lg hover:shadow-xl duration-300"
           >
           Resume
           </a>
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="about">
             <h1 className="font-bold text-4xl">About</h1>
+            <Image src={Info} alt="Info"></Image>
             <p 
                 className="max-w-[500px] min-w-52"
             >
@@ -45,6 +53,7 @@ export default function Portfolio() {
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="skills">
             <h1 className="font-bold text-4xl">Skills</h1>
+            <Image src={Skills} alt="Skills"></Image>
             <p 
                 className="max-w-[500px] min-w-52"
             >
@@ -54,6 +63,7 @@ export default function Portfolio() {
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="projects">
             <h1 className="font-bold text-4xl">Projects</h1>
+            <Image src={Projects} alt="Projects"></Image>
             <p 
                 className="max-w-[500px] min-w-52"
             >
@@ -63,6 +73,7 @@ export default function Portfolio() {
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="contact">
             <h1 className="font-bold text-4xl">Contact</h1>
+            <Image src={Contact} alt="Contact"></Image>
             <p 
                 className="max-w-[500px] min-w-52"
             >
