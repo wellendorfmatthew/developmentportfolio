@@ -225,12 +225,37 @@ export default function Portfolio() {
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="contact">
             <h1 className="font-bold text-4xl">Contact</h1>
             <Image src={Contact} alt="Contact"></Image>
-            <p 
-                className="max-w-[500px] min-w-52"
-            >
-            Entry-level Software Engineer experienced in using HTML and CSS to build responsive web applications and eager to use
-            React, Javascript, Node.js and other technologies to solve complex problems and make meaningful contributions.
-            </p>
+            <p className="font-bold text-xl">wellendorfmatthew@gmail.com</p>
+            <div className="flex flex-col gap-12 items-center justify-center w-1/3">
+                <div className="flex flex-col justify-center items-center gap-4 w-full">
+                    <label htmlFor="name" className="text-xl">Name</label>
+                    <input 
+                        type="text" 
+                        placeholder="Enter your name" 
+                        id="name" 
+                        className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full" 
+                    />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 w-full">
+                    <label htmlFor="email" className="text-xl">Email</label>
+                    <input 
+                        type="text" 
+                        placeholder="Enter your email" 
+                        id="email" 
+                        className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full" 
+                    />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 w-full">
+                    <label htmlFor="message" className="text-xl">Message</label>
+                    <textarea 
+                        name="textarea" 
+                        id="message"
+                        placeholder="Enter your message"
+                        className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full h-[300px]" 
+                    >
+                    </textarea>
+                </div>
+            </div>
         </div>
       </div>
     </div>
