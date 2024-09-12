@@ -163,7 +163,7 @@ export default function Portfolio() {
             <div className="flex flex-col items-center justify-center bg-thistle gap-8 rounded-3xl px-8 py-12 w-1/2 shadow-xl">
                 <h1 className="font-bold text-2xl">Password Manager</h1>
                 <p>A website that lets users create a randomly generated password using several filters. Users are also able to sign in and
-                    add passwords for websites that they would like to store. There's also a feature that lets users check the strength and uniqueness 
+                    add passwords for websites that they would like to store. There is also a feature that lets users check the strength and uniqueness 
                     of their passwords.
                 </p>
                 <div className="flex items-start justify-center gap-16">
@@ -193,7 +193,7 @@ export default function Portfolio() {
             </div>
             <div className="flex flex-col items-center justify-center bg-thistle gap-8 rounded-3xl px-8 py-12 w-1/2 shadow-xl">
                 <h1 className="font-bold text-2xl">Geaux Network</h1>
-                <p>This is the website for my internship where I've made several contributions. I helped redesign the sign in, sign up, forgot password,
+                <p>This is the website for my internship where I have made several contributions. I helped redesign the sign in, sign up, forgot password,
                     reset password, and profile pages. I implemented features such as language translation, otp authentication, profile information updating,
                     UI menus, and helped fix bugs when needed. 
                 </p>
