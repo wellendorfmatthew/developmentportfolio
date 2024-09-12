@@ -19,6 +19,10 @@ import TYPESCRIPT_ICON from "../public/typescript.png";
 import NODE_ICON from "../public/node-js.png";
 import { CIcon } from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
+import LINK_ICON from "../public/external-link.png";
+import JQUERY_ICON from "../public/social.png";
+import CSHARP from "../public/c-sharp.png";
+import DOTNET_ICON from "../public/website.png";
 
 export default function Portfolio() {
   return (
@@ -27,9 +31,6 @@ export default function Portfolio() {
       <div className="pt-44 flex flex-col gap-8">
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="home">
           <h1 className="font-bold text-4xl">Home</h1>
-          <div className="flex gap-28">
-            
-          </div>
           <Image src={Programming} alt="Programming"></Image>
           <p 
               className="max-w-[500px] min-w-52"
@@ -111,17 +112,115 @@ export default function Portfolio() {
                     <CIcon icon={icon.cibMongodb} className="w-[64px] h-[64px]" />
                     <p className="font-bold">MongoDB</p>
                 </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <CIcon icon={icon.cibDotNet} className="w-[64px] h-[64px]" />
+                    <p className="font-bold">.NET Framework</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <Image src={JQUERY_ICON} alt="Jquery"></Image>
+                    <p className="font-bold">Jquery</p>
+                </div>
+                <div className="flex justify-between items-center px-4 py-4 bg-thistle rounded-xl w-[250px] hover:opacity-80 duration-300">
+                    <Image src={CSHARP} alt="C#"></Image>
+                    <p className="font-bold">C#</p>
+                </div>
             </div>
         </div>
-        <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="projects">
+        <div className="flex flex-col w-screen justify-center items-center gap-20 text-black pt-[150px]" id="projects">
             <h1 className="font-bold text-4xl">Projects</h1>
             <Image src={Projects} alt="Projects"></Image>
-            <p 
-                className="max-w-[500px] min-w-52"
-            >
-            Entry-level Software Engineer experienced in using HTML and CSS to build responsive web applications and eager to use
-            React, Javascript, Node.js and other technologies to solve complex problems and make meaningful contributions.
-            </p>
+            <div className="flex flex-col items-center justify-center bg-thistle gap-8 rounded-3xl px-8 py-12 w-1/2 shadow-xl">
+                <h1 className="font-bold text-2xl">Ecommerce Website</h1>
+                <p>A full stack ecommerce website where users can select clothing items and add them to a cart. The Stripe API is used
+                    for payment processing and signed in users are able to access a profile page where they can view wishlist items, update
+                    personal information, and view their order history. 
+                </p>
+                <div className="flex items-start justify-center gap-16">
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Technologies Used:</p>
+                        <div className="grid grid-cols-3 gap-8">
+                            <Image src={React} alt="React"></Image>
+                            <Image src={Javascript} alt="Javascript"></Image>
+                            <CIcon icon={icon.cibMongodb} className="w-[64px] h-[64px]" />
+                            <Image src={HTML_ICON} alt="HTML"></Image>
+                            <Image src={CSS_ICON} alt="CSS"></Image>
+                            <Image src={NODE_ICON} alt="Node"></Image>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Links:</p>
+                        <div className="flex gap-8">
+                            <a href="https://github.com/wellendorfmatthew/goth-ecommerce-website" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={Github} alt="Github"></Image>
+                            </a>
+                            <a href="https://goth-ecommerce-website.vercel.app/" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={LINK_ICON} alt="Link"></Image>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col items-center justify-center bg-thistle gap-8 rounded-3xl px-8 py-12 w-1/2 shadow-xl">
+                <h1 className="font-bold text-2xl">Password Manager</h1>
+                <p>A website that lets users create a randomly generated password using several filters. Users are also able to sign in and
+                    add passwords for websites that they would like to store. There's also a feature that lets users check the strength and uniqueness 
+                    of their passwords.
+                </p>
+                <div className="flex items-start justify-center gap-16">
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Technologies Used:</p>
+                        <div className="grid grid-cols-3 gap-8">
+                            <CIcon icon={icon.cibDotNet} className="w-[64px] h-[64px]" />
+                            <Image src={JQUERY_ICON} alt="Jquery"></Image>
+                            <Image src={CSHARP} alt="C#"></Image>
+                            <Image src={HTML_ICON} alt="HTML"></Image>
+                            <Image src={CSS_ICON} alt="CSS"></Image>
+                            <Image src={SQL} alt="SQL Server"></Image>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Links:</p>
+                        <div className="flex gap-8">
+                            <a href="https://github.com/wellendorfmatthew/password-manager" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={Github} alt="Github"></Image>
+                            </a>
+                            <a href="https://github.com/wellendorfmatthew/password-manager" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={LINK_ICON} alt="Link"></Image>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col items-center justify-center bg-thistle gap-8 rounded-3xl px-8 py-12 w-1/2 shadow-xl">
+                <h1 className="font-bold text-2xl">Geaux Network</h1>
+                <p>This is the website for my internship where I've made several contributions. I helped redesign the sign in, sign up, forgot password,
+                    reset password, and profile pages. I implemented features such as language translation, otp authentication, profile information updating,
+                    UI menus, and helped fix bugs when needed. 
+                </p>
+                <div className="flex items-start justify-center gap-16">
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Technologies Used:</p>
+                        <div className="grid grid-cols-3 gap-8">
+                            <Image src={React} alt="React"></Image>
+                            <Image src={Javascript} alt="Javascript"></Image>
+                            <Image src={HTML_ICON} alt="HTML"></Image>
+                            <Image src={CSS_ICON} alt="CSS"></Image>
+                            <Image src={FIREBASE_ICON} alt="Firebase"></Image>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-8 items-center justify-center">
+                        <p className="font-bold">Links:</p>
+                        <div className="flex gap-8">
+                            <a href="https://github.com/GagOrderNetwork/Web-Development" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={Github} alt="Github"></Image>
+                            </a>
+                            <a href="https://player.geaux.tv/" className="hover:opacity-70 hover:rounded-full duration-300">
+                                <Image src={LINK_ICON} alt="Link"></Image>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="flex flex-col w-screen justify-center items-center gap-8 text-black pt-[150px]" id="contact">
             <h1 className="font-bold text-4xl">Contact</h1>
