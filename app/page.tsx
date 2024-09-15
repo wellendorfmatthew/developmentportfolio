@@ -23,8 +23,26 @@ import LINK_ICON from "../public/external-link.png";
 import JQUERY_ICON from "../public/social.png";
 import CSHARP from "../public/c-sharp.png";
 import DOTNET_ICON from "../public/website.png";
+import { useState } from "react";
 
 export default function Portfolio() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [submitMessage, setSubmitMessage] = useState("");
+
+    const handleMessage = () => {
+        setTimeout(() => {
+            setSubmitMessage("Thanks! I'll get back to your shortly.");
+            console.log("does this work");
+        }, 5000);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubmitMessage("");
+        console.log("how about this");
+    }
+
   return (
     <div>
       <Header></Header>
@@ -226,7 +244,11 @@ export default function Portfolio() {
             <h1 className="font-bold text-4xl">Contact</h1>
             <Image src={Contact} alt="Contact"></Image>
             <p className="font-bold text-xl">wellendorfmatthew@gmail.com</p>
-            <div className="flex flex-col gap-12 items-center justify-center w-1/3">
+            <form 
+                className="flex flex-col gap-12 items-center justify-center w-1/3" 
+                action="https://formsubmit.co/wellendorfmatthew@gmail.com" 
+                method="POST"
+            >
                 <div className="flex flex-col justify-center items-center gap-4 w-full">
                     <label htmlFor="name" className="text-xl">Name</label>
                     <input 
@@ -234,6 +256,7 @@ export default function Portfolio() {
                         placeholder="Enter your name" 
                         id="name" 
                         className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full" 
+                        required
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center gap-4 w-full">
@@ -243,6 +266,7 @@ export default function Portfolio() {
                         placeholder="Enter your email" 
                         id="email" 
                         className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full" 
+                        required
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center gap-4 w-full">
@@ -252,10 +276,20 @@ export default function Portfolio() {
                         id="message"
                         placeholder="Enter your message"
                         className="bg-thistle text-black border-black border-2 py-4 pl-2 placeholder-black w-full h-[300px]" 
+                        required
                     >
                     </textarea>
                 </div>
-            </div>
+                <button 
+                    className="bg-thistle text-center text-lg px-8 py-4 rounded-full hover:font-bold hover:text-lg 
+                                hover:shadow-xl duration-300"
+                    type="submit"
+                    onClick={() => handleMessage()}
+                >
+                    Submit
+                </button>
+                <p className="text-center mb-8">{submitMessage}</p>
+            </form>
         </div>
       </div>
     </div>
